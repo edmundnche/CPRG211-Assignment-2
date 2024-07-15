@@ -1,0 +1,154 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Admin\\Documents\\SAIT\\CPRG211 Object Oriented Programming 2\\Sam Code\\Assignment 2\\Traveless 2\\Traveless\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{66AB2A84-E644-4B07-99F7-B7B155F5560F}|Traveless.csproj|c:\\users\\admin\\documents\\sait\\cprg211 object oriented programming 2\\sam code\\assignment 2\\traveless 2\\traveless\\data\\reservationmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{66AB2A84-E644-4B07-99F7-B7B155F5560F}|Traveless.csproj|solutionrelative:data\\reservationmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{66AB2A84-E644-4B07-99F7-B7B155F5560F}|Traveless.csproj|c:\\users\\admin\\documents\\sait\\cprg211 object oriented programming 2\\sam code\\assignment 2\\traveless 2\\traveless\\data\\flights.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{66AB2A84-E644-4B07-99F7-B7B155F5560F}|Traveless.csproj|solutionrelative:data\\flights.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{66AB2A84-E644-4B07-99F7-B7B155F5560F}|Traveless.csproj|c:\\users\\admin\\documents\\sait\\cprg211 object oriented programming 2\\sam code\\assignment 2\\traveless 2\\traveless\\data\\reservation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{66AB2A84-E644-4B07-99F7-B7B155F5560F}|Traveless.csproj|solutionrelative:data\\reservation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{66AB2A84-E644-4B07-99F7-B7B155F5560F}|Traveless.csproj|c:\\users\\admin\\documents\\sait\\cprg211 object oriented programming 2\\sam code\\assignment 2\\traveless 2\\traveless\\pages\\flightfinder.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{66AB2A84-E644-4B07-99F7-B7B155F5560F}|Traveless.csproj|solutionrelative:pages\\flightfinder.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{66AB2A84-E644-4B07-99F7-B7B155F5560F}|Traveless.csproj|c:\\users\\admin\\documents\\sait\\cprg211 object oriented programming 2\\sam code\\assignment 2\\traveless 2\\traveless\\pages\\reservation.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{66AB2A84-E644-4B07-99F7-B7B155F5560F}|Traveless.csproj|solutionrelative:pages\\reservation.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{66AB2A84-E644-4B07-99F7-B7B155F5560F}|Traveless.csproj|c:\\users\\admin\\documents\\sait\\cprg211 object oriented programming 2\\sam code\\assignment 2\\traveless 2\\traveless\\pages\\index.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{66AB2A84-E644-4B07-99F7-B7B155F5560F}|Traveless.csproj|solutionrelative:pages\\index.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{66AB2A84-E644-4B07-99F7-B7B155F5560F}|Traveless.csproj|c:\\users\\admin\\documents\\sait\\cprg211 object oriented programming 2\\sam code\\assignment 2\\traveless 2\\traveless\\data\\airports.csv||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{66AB2A84-E644-4B07-99F7-B7B155F5560F}|Traveless.csproj|solutionrelative:data\\airports.csv||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{66AB2A84-E644-4B07-99F7-B7B155F5560F}|Traveless.csproj|c:\\users\\admin\\documents\\sait\\cprg211 object oriented programming 2\\sam code\\assignment 2\\traveless 2\\traveless\\data\\flights.csv||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{66AB2A84-E644-4B07-99F7-B7B155F5560F}|Traveless.csproj|solutionrelative:data\\flights.csv||{8B382828-6202-11D1-8870-0000F87579D2}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Reservation.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Documents\\SAIT\\CPRG211 Object Oriented Programming 2\\Sam Code\\Assignment 2\\Traveless 2\\Traveless\\Data\\Reservation.cs",
+              "RelativeDocumentMoniker": "Data\\Reservation.cs",
+              "ToolTip": "C:\\Users\\Admin\\Documents\\SAIT\\CPRG211 Object Oriented Programming 2\\Sam Code\\Assignment 2\\Traveless 2\\Traveless\\Data\\Reservation.cs",
+              "RelativeToolTip": "Data\\Reservation.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAASAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-15T19:45:20.652Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ReservationManager.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Documents\\SAIT\\CPRG211 Object Oriented Programming 2\\Sam Code\\Assignment 2\\Traveless 2\\Traveless\\Data\\ReservationManager.cs",
+              "RelativeDocumentMoniker": "Data\\ReservationManager.cs",
+              "ToolTip": "C:\\Users\\Admin\\Documents\\SAIT\\CPRG211 Object Oriented Programming 2\\Sam Code\\Assignment 2\\Traveless 2\\Traveless\\Data\\ReservationManager.cs",
+              "RelativeToolTip": "Data\\ReservationManager.cs",
+              "ViewState": "AQIAACEAAAAAAAAAAAAYwAgAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-15T19:45:20.744Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Flights.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Documents\\SAIT\\CPRG211 Object Oriented Programming 2\\Sam Code\\Assignment 2\\Traveless 2\\Traveless\\Data\\Flights.cs",
+              "RelativeDocumentMoniker": "Data\\Flights.cs",
+              "ToolTip": "C:\\Users\\Admin\\Documents\\SAIT\\CPRG211 Object Oriented Programming 2\\Sam Code\\Assignment 2\\Traveless 2\\Traveless\\Data\\Flights.cs",
+              "RelativeToolTip": "Data\\Flights.cs",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAAwE4AAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-15T19:45:20.759Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "flights.csv",
+              "DocumentMoniker": "C:\\Users\\Admin\\Documents\\SAIT\\CPRG211 Object Oriented Programming 2\\Sam Code\\Assignment 2\\Traveless 2\\Traveless\\Data\\flights.csv",
+              "RelativeDocumentMoniker": "Data\\flights.csv",
+              "ToolTip": "C:\\Users\\Admin\\Documents\\SAIT\\CPRG211 Object Oriented Programming 2\\Sam Code\\Assignment 2\\Traveless 2\\Traveless\\Data\\flights.csv",
+              "RelativeToolTip": "Data\\flights.csv",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAA4AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002120|",
+              "WhenOpened": "2024-07-15T19:45:20.768Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "airports.csv",
+              "DocumentMoniker": "C:\\Users\\Admin\\Documents\\SAIT\\CPRG211 Object Oriented Programming 2\\Sam Code\\Assignment 2\\Traveless 2\\Traveless\\Data\\airports.csv",
+              "RelativeDocumentMoniker": "Data\\airports.csv",
+              "ToolTip": "C:\\Users\\Admin\\Documents\\SAIT\\CPRG211 Object Oriented Programming 2\\Sam Code\\Assignment 2\\Traveless 2\\Traveless\\Data\\airports.csv",
+              "RelativeToolTip": "Data\\airports.csv",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002120|",
+              "WhenOpened": "2024-07-15T19:45:20.774Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Reservation.razor",
+              "DocumentMoniker": "C:\\Users\\Admin\\Documents\\SAIT\\CPRG211 Object Oriented Programming 2\\Sam Code\\Assignment 2\\Traveless 2\\Traveless\\Pages\\Reservation.razor",
+              "RelativeDocumentMoniker": "Pages\\Reservation.razor",
+              "ToolTip": "C:\\Users\\Admin\\Documents\\SAIT\\CPRG211 Object Oriented Programming 2\\Sam Code\\Assignment 2\\Traveless 2\\Traveless\\Pages\\Reservation.razor",
+              "RelativeToolTip": "Pages\\Reservation.razor",
+              "ViewState": "AQIAAFEAAAAAAAAAAIBJwBMAAAAYAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-15T19:45:20.781Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Flightfinder.razor",
+              "DocumentMoniker": "C:\\Users\\Admin\\Documents\\SAIT\\CPRG211 Object Oriented Programming 2\\Sam Code\\Assignment 2\\Traveless 2\\Traveless\\Pages\\Flightfinder.razor",
+              "RelativeDocumentMoniker": "Pages\\Flightfinder.razor",
+              "ToolTip": "C:\\Users\\Admin\\Documents\\SAIT\\CPRG211 Object Oriented Programming 2\\Sam Code\\Assignment 2\\Traveless 2\\Traveless\\Pages\\Flightfinder.razor",
+              "RelativeToolTip": "Pages\\Flightfinder.razor",
+              "ViewState": "AQIAAIMAAAAAAAAAAIBJwKoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-15T19:45:20.787Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Index.razor",
+              "DocumentMoniker": "C:\\Users\\Admin\\Documents\\SAIT\\CPRG211 Object Oriented Programming 2\\Sam Code\\Assignment 2\\Traveless 2\\Traveless\\Pages\\Index.razor",
+              "RelativeDocumentMoniker": "Pages\\Index.razor",
+              "ToolTip": "C:\\Users\\Admin\\Documents\\SAIT\\CPRG211 Object Oriented Programming 2\\Sam Code\\Assignment 2\\Traveless 2\\Traveless\\Pages\\Index.razor",
+              "RelativeToolTip": "Pages\\Index.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAOAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-15T19:45:20.792Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

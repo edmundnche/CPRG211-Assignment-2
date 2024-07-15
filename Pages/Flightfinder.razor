@@ -1,0 +1,228 @@
+﻿@page "/Flightfinder"
+@using Traveless.Data;
+@using System;
+@using System.IO;
+@using System.Text.Json;
+
+<style>
+    #findflightbtn{
+        width:300px;
+    }
+    #reservebtn{
+        width:250px;
+    }
+    .centerbtn{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin:20px;
+    }
+    button{
+        font-size:15px;
+        background-color:royalblue;
+        color:white;
+    }
+    .button:hover{
+        background-color:blue;
+    }
+    label{
+        font-size:15px;
+    }
+    input{
+        font-size:15px;
+    }
+    .longinput{
+
+        padding-right:83%;
+    }
+    p{
+        font-size:13px;
+        text-align: center;
+    }
+    .labelrow{
+        display: inline-block;
+        margin-right:21%;   
+    }
+    .inputrow{
+        display: inline-block;
+        margin-right: 1%;
+        width: 250px;
+    }
+    h5 {
+        text-align: center;
+        margin-bottom:10px;
+        margin-top:20px;
+    }
+</style>
+
+
+
+
+
+
+<form onsubmit="return false">
+    <h5>Flight Finder</h5>
+
+    <div>
+        <label class="labelrow" for="from" >From:</label>
+        <label class="labelrow" for="to" >To:</label>
+        <label class="labelrow" for="day1">Day:</label>
+    </div>
+
+    <div>
+        <input placeholder=" Any" type="text" class="inputrow" name="from" id="from" @bind="fromAirportCode">
+        <input placeholder=" Any" type="text" class="inputrow" name="to" id="to" @bind="toAirportCode">
+        <input placeholder=" Any" type="text" class="inputrow" name="day1" id="day1" @bind="departDay">
+        <button class="button inputrow" id="findflightbtn" @onclick="FindFlights">Find flights</button>
+    </div>
+
+    <p>@reInfo</p>
+</form>
+
+<form onsubmit="return false">
+    <h5>Flights</h5>
+    <select @onchange="OnSelect">
+        @foreach (Flights matchingFlight in matchingFlights)
+        {
+            <option placeholder=" Loading..." class="longinput" type="text" name="flight" id="flight" value="@matchingFlight.FlightNumber"> @matchingFlight</option>
+
+        }
+    </select>
+
+</form>
+
+<form onsubmit="return false">
+    <h5>Reserve</h5>
+
+    @if (reserveFlight != null)
+    {
+        <label for="flightcode">Flight code:</label> <br/>
+        <input placeholder=" Flight" class="longinput" type="text" name="flightcode" id="flightcode" @bind="reserveFlight.FlightNumber"><br />
+
+        <label for="airline">Airline:</label> <br/>
+        <input placeholder=" Airline" class="longinput" type="text" name="airline" id="airline" @bind="reserveFlight.Airline"> <br />
+
+        <label for="day2">Day:</label> <br/>
+        <input placeholder=" Day" class="longinput" type="text" name="day2" id="day2" @bind="reserveFlight.DayOfWeek"> <br />
+
+        <label for="time">Time:</label> <br/>
+        <input placeholder=" Time" class="longinput" type="text" name="time" id="time" @bind="reserveFlight.DepartureTime"> <br />
+
+        <label for="cost">Cost:</label> <br/>
+        <input placeholder="0" class="longinput" type="text" name="cost" id="cost" @bind="reserveFlight.Price"> <br />
+
+        <label for="name">Name:</label> <br/>
+        <input placeholder=" Name" class="longinput" type="text" name="name" id="name" @bind="name"> <br />
+
+        <label for="citizenship">Citizenship:</label> <br />
+        <input placeholder=" Citizenship" class="longinput" type="text" name="citizenship" id="citizenship" @bind="citizenship"> <br />
+    }
+
+
+
+    <div class="centerbtn">
+        <button @onclick="makeReservation" class="button" id="reservebtn">Reserve</button> <br />
+        
+    </div>
+
+
+    <p>Reservation Code: @rsvCode</p>
+</form>
+
+@code {
+    private string fromAirportCode;
+    private string toAirportCode;
+    private string departDay;
+    private string flightInfo;
+    private Flights? reserveFlight;
+    private string? reInfo;
+    private List<string> flights = new List<string>();
+    private string? name;
+    private string? citizenship;
+    private string? rsvCode;
+    private List<Flights> matchingFlights = new List<Flights>();
+
+    private string flightsPath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory,"Data","flights.csv");
+    private string reservePath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Data", "reservation.json");
+
+
+    private void FindFlights()
+    {
+
+        try
+        {
+
+            using (StreamReader reader = new StreamReader(flightsPath))
+            {
+                string line;
+                while ((line = reader.ReadLine()) != null)
+                {
+                    string[] parts = line.Split(',');
+
+                    if (parts.Length == 8)
+                    {
+                        string flightNumber = parts[0];
+                        string airline = parts[1];
+                        string fromAirport = parts[2];
+                        string toAirport = parts[3];
+                        string dayOfWeek = parts[4];
+                        string departureTime = parts[5];
+                        int totalSeatNo = int.Parse(parts[6]);
+                        decimal price = decimal.Parse(parts[7]);
+
+                        if (fromAirportCode == fromAirport && toAirportCode == toAirport)
+                        {
+                            matchingFlights.Add(new Flights(flightNumber, airline, fromAirport, toAirport, dayOfWeek, departureTime, totalSeatNo, price));
+                            // matchingFlights.Add($"Flight {flightNumber} by {airline} departs on {dayOfWeek} at {departureTime}. Price: {price}");
+                        }
+                    }
+                }
+                reserveFlight = matchingFlights[0];
+
+            }
+
+            if (matchingFlights.Count > 0)
+            {
+                //flightInfo = matchingFlights[0];
+            }
+            else
+            {
+                // error promt
+                //await JSRuntime.InvokeAsync<object>("alert", new object[] { "No matching flights found." });
+            }
+        }
+        catch (Exception ex)
+        {
+
+        }
+
+
+    }
+
+    private void OnSelect(ChangeEventArgs e)
+    {
+        foreach (Flights matchingFlight in matchingFlights)
+        {
+            if (matchingFlight.FlightNumber == e.Value.ToString())
+            {
+                reserveFlight = matchingFlight;
+            }
+
+        }
+    }
+
+    private void makeReservation()
+    {
+        rsvCode = MakeReservation.GenerateReservationCode();
+        // File.WriteAllText(reservePath, JsonSerializer.Deserialize<List<Reservation>>(new MakeReservation(rsvCode, name, citizenship, reserveFlight)));
+        File.WriteAllText(reservePath, JsonSerializer.Serialize(new MakeReservation(rsvCode, name, citizenship, reserveFlight).ToString()));
+        // try { File.WriteAllText(reservePath, JsonSerializer.Serialize(new MakeReservation(code, name, citizenship, reserveFlight))); }
+        // catch(ex)
+        // {
+            
+        
+        // }
+
+    }
+
+}

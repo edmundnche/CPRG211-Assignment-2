@@ -1,0 +1,122 @@
+﻿@page "/Reservation"
+
+<style>
+    #findreservationbtn {
+        width: 300px;
+    }
+
+    #savebtn {
+        width: 250px;
+    }
+
+    .centerbtn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 20px;
+    }
+
+    button {
+        font-size: 15px;
+        background-color: royalblue;
+        color: white;
+    }
+
+    .button:hover {
+        background-color: blue;
+    }
+
+    label {
+        font-size: 15px;
+    }
+
+    input {
+        font-size: 15px;
+    }
+
+    .longinput {
+        padding-right: 83%;
+    }
+
+    p {
+        font-size: 13px;
+        text-align: center;
+    }
+
+    .labelrow {
+        display: inline-block;
+        margin-right: 20%;
+    }
+
+    .inputrow {
+        display: inline-block;
+        margin-right: 1%;
+        width:250px;
+    }
+
+    h5 {
+        text-align: center;
+        margin-bottom: 10px;
+        margin-top: 20px;
+    }
+</style>
+
+
+
+
+
+
+<form>
+    <h5>Reservation Finder</h5>
+
+    <div>
+        <label class="labelrow" for="code">Code:</label>
+        <label class="labelrow" for="airline1">Airline:</label>
+        <label class="labelrow" for="name1">Name:</label>
+    </div>
+
+    <div>
+        <input value=" Any" type="text" class="inputrow" name="code" id="code">
+        <input value=" Any" type="text" class="inputrow" name="airline1" id="airline1">
+        <input value=" Any" type="text" class="inputrow" name="name1" id="name1">
+        <button class="button inputrow" id="findreservationbtn">Find reservation</button>
+    </div>
+</form>
+
+<form>
+    <h5>Reservations</h5>
+    <input value=" Loading..." class="longinput" type="text" name="reservation" id="reservation">
+</form>
+
+<form>
+    <h5>Reserve</h5>
+
+    <label for="reservationcode">Reservation code:</label> <br />
+    <input placeholder=" Reservation code" class="longinput" type="text" name="reservationcode" id="reservationcode"><br />
+
+    <label for="flightcode">Flight code:</label> <br />
+    <input placeholder=" Flight code" class="longinput" type="text" name="flightcode" id="flightcode"> <br />
+
+    <label for="airline2">Airline:</label> <br />
+    <input placeholder=" Airline" class="longinput" type="text" name="airline2" id="airline2"> <br />
+
+    <label for="cost">Cost:</label> <br />
+    <input placeholder=" Cost" class="longinput" type="text" name="cost" id="cost"> <br />
+
+    <label for="name2">Name:</label> <br />
+    <input placeholder=" Name" class="longinput" type="text" name="name2" id="name2"> <br />
+
+    <label for="citizenship">Citizenship:</label> <br />
+    <input placeholder=" Citizenship" class="longinput" type="text" name="citizenship" id="citizenship"> <br />
+
+    <label for="status">Status:</label> <br />
+    <input value=" Loading..." class="longinput" type="text" name="status" id="status"> <br />
+
+    <div class="centerbtn">
+        <button class="button" id="savebtn">Save</button> <br />
+    </div>
+</form>
+
+@code {
+
+}
